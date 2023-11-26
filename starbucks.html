@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="first-two-columns">
+    <div class="logo-container">
+        <div class="logo-container-left">
+            <div class="logo">
+                <img src="sb.jpg" alt="Logo" class="logo">
+            </div>
+            <div class="hom">
+                 <a href="#">Home</a>
+            </div>
+            <div class="gift">
+                 <a href="#">Gift</a>
+            </div>
+            <div class="order">
+                 <a href="#footer">About us</a>
+            </div>
+         </div>
+
+         <div class="logo-container-right">
+            <div class="search-bar">
+                <i class="fa fa-magnifying-glass"></i><input type="text" name="search" placeholder="  Looking for something?">
+            </div>
+            <div class="container">
+                <p id="form-open"><i class="fa fa-circle-user fa-2x"></i></p>
+            </div>
+            <section class="home">
+                <div class="form_container">
+                    <i class="fa-solid fa-x form_close"></i>
+                    <!-- login form -->
+                    <div class="form login_form">
+                        <form action="#">
+                            <h2>Login</h2>
+                            <div class="input_box">
+                                <input type="email" placeholder="Enter your email" required>
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="input_box">
+                                <input type="password" placeholder="Enter your password" required>
+                                <i class="fa-solid fa-lock"></i>
+                                <i class="fa-regular fa-eye-slash pw_hide"></i>
+                            </div>
+                            <div class="option_field">
+                                <span class="checkbox">
+                                    <input type="checkbox" name="" id="check">
+                                    <label for="check">Remember me</label>
+                                </span>
+                                <a href="#" class="forgot_pw">Forgot password</a>
+                            </div>
+                            <button class="button">Login Now</button>
+                            <div class="login_signup">
+                                Dont't have an account? <a href="#" id="signup">Signup</a>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- signup here -->
+                    <div class="form signup_form">
+                        <form action="#">
+                            <h2>Signup</h2>
+                            <div class="input_box">
+                                <input type="email" placeholder="Enter your email" required>
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="input_box">
+                                <input type="password" placeholder="Create password" required>
+                                <i class="fa-solid fa-lock"></i>
+                                <i class="fa-regular fa-eye-slash pw_hide"></i>
+                            </div>
+                            <div class="input_box">
+                                <input type="password" placeholder="Confirm password" required>
+                                <i class="fa-solid fa-lock"></i>
+                                <i class="fa-regular fa-eye-slash pw_hide"></i>
+                            </div>      
+                            <button class="button">Signup Now</button>
+                            <div class="login_signup">
+                                Already have an account? <a href="#" id="loginup">Login</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+   </div>
+   
+    <div class="container-two">
+        <div class="slogan">
+            Avail benefits! Sign up for My Starbucks Rewards
+        </div>
+        <div class="know-more">
+            <a href="#" class="know-moore">know more</a>
+        </div>
+    </div>
+</div>
+<section id="home">
+    <div class="latest-offering">
+        Latest Offerings
+    </div>
+    <div class="items">
+        <div class="first-image-box">
+            <div class="box1">
+                <img src="cl.jpg" alt="">
+                <h1 class="item-name">Mocha Cookie Crumble Latte</h1>
+                <p class="item-para">Our Mocha Cookie crumble Latte is a deliciously flavoured  </p>
+                <p class="item-para-2">mocha indulgence - Hot coffee meets chocolate.</p>
+                <div class="item-value">
+                    <span class="item-price">₹414.75</span>
+                    <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+                    <div class="overlay" id="overlay">
+                        <!-- Popup content -->
+                        <div class="popup">
+                            <span class="close" onclick="togglePopup()">&times;</span>
+                            <h2 class="adc">Add to Cart</h2>
+                            <h2 class="quant">Quantity</h2>
+                            <div class="quantity">
+                                <button onclick="decreaseQuantity()">&#8722;</button>
+                                <span id="quantity">1</span>
+                                <button onclick="increaseQuantity()">+</button>
+                            </div>
+                            <button class="button" id="button">Add now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="cf.jpg" alt="">
+                <h1 class="item-name">Mocha Cookie Crumble Frappuccino</h1>
+                <p class="item-para">A perfect blend of coffee, vanilla flavour, milk and cocoa </p>
+                <p class="item-para-2">powder.</p>
+                <div class="item-value">
+                    <span class="item-price">₹483.00</span>
+                    <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+                </div>  
+            </div>
+            <div class="box3">
+                <img src="ic.jpg" alt="">
+                <h1 class="item-name">Iced Mocha Cookie Crumble</h1>
+                <p class="item-para">A mix of cocoa powder, Vanilla flavour and espresso shot </p>
+                <p class="item-para-2">served on millk and ice.</p>
+                <div class="item-value">
+                    <span class="item-price">₹446.25</span>
+                    <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+               </div>
+            </div>
+            <div class="box3">
+                <img src="sa.jpg" alt="">
+                <h1 class="item-name">Strawberry Acai Lemonade Refresher</h1>
+                <p class="item-para">Sweet strawberry flavours accented by acai notes, shaken </p>
+                <p class="item-para-2">with ice and strawberry.</p>
+                <div class="item-value">
+                    <span class="item-price">₹346.50</span>
+                    <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Barista-Recommends">
+        <h1 class="barista">Barista Recommends</h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="wrapper-2"><div class="box">
+            <span class="items1"><img src="hazelnut.jpg" alt=""></span>
+            <p class="items-name">Hazelnut Triangle</p>
+            <div class="items-prices">
+                <span class="item-price">₹204.75</span>
+                <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+            </div>
+        </div></div>
+        <div class="box">
+            <span class="items1"><img src="puff.jpg" alt=""></span>
+            <p class="items-name">Bhuna Chicken Puff</p>
+            <div class="items-prices">
+                <span class="item-price">₹194.25</span>
+                <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+            </div>
+        </div>
+        <div class="box">
+            <span class="items1"><img src="brownie.png" alt=""></span>
+            <p class="items-name-1">Chocolate Brownie Cupcake</p>
+            <div class="items-prices">
+                <span class="item-price">₹288.75</span>
+                <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+            </div>
+        </div>
+        <div class="box">
+            <span class="items1"><img src="dip.jpg" alt=""></span>
+            <p class="items-name">Three Dip Nachos</p>
+            <div class="items-prices-1">
+                <span class="item-price">₹262.50</span>
+                <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+            </div>
+        </div>
+        <div class="box">
+            <span class="items1"><img src="paneer.jpg" alt=""></span>
+            <p class="items-name-1">Chilli Paneer in Herbed Bun</p>
+            <div class="items-prices">
+                <span class="item-price">₹283.50</span>
+                <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <a href="#" id="toggle-link">View More</a>
+        <div class="product-grid" id="product-grid">
+            <div class="product-box">
+                <div class="txo">
+                    <span><img src="Java Chip Frappuccino.jpg" alt=""></span>
+                    <h2>Java Chip Frappuccino</h2>
+                    <p>We blend mocha sauce and Frappuccino® chips with Frappuccino...</p>
+                </div>
+                <div class="item-values">
+                    <span class="item-price">₹367.50</span>
+                    <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="txoo">
+                    <img src="Caffe Americano.jpeg" alt="">
+                    <h3>Caffe Americano</h3>
+                    <p>Rich in flavour, full-bodied espresso with hot water in true...</p>
+                </div>
+                <div class="item-value">
+                    <span class="item-price">₹262.50</span>
+                    <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="txoo">
+                    <img src="cold coffee.jpeg" alt="">
+                    <h4>Cold coffee</h4>
+                    <p>Our signature rich in flavour espresso blended with delicate...</p>
+                </div>
+                <div class="item-value">
+                    <span class="item-price">₹362.50</span>
+                    <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="txoo">
+                    <img src="Double Chocolate Chip Frappuccino.jpg" alt="">
+                    <h2> Chocolate Chip Frappuccino</h2>
+                    <p>Rich mocha-flavored sauce meets up with chocolaty chips, mil...</p>
+                </div>
+                <div class="item-value">
+                    <span class="item-price">₹399.00</span>
+                    <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="txoo">
+                    <img src="Creamy Spinach and Corn Pocket.webp" alt="">
+                    <h3>Creamy Spinach</h3>
+                    <p>"A creamy spinach and corn filling encased in a buttery Fren...</p>
+                </div>
+                <div class="item-value">
+                    <span class="item-price">₹246.75</span>
+                    <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="txoo">
+                    <img src="cappuccino.jpg" alt="">
+                    <h4>Cappuccino</h4>
+                    <p>Dark, Rich in flavour espresso lies in wait under a smoothed...</p>
+                </div>
+                <div class="item-value">
+                    <span class="item-price">₹283.50</span>
+                    <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="txoo">
+                    <img src="Egg White and Chicken In Multigrain Croiss.jpg" alt="">
+                    <h2> Chicken In Multigrain Croiss</h2>
+                    <p>Fluffy egg white omlette and chicken ham sandwiched in multi...</p>
+                </div>
+                <div class="item-value">
+                    <span class="item-price">₹383.25</span>
+                    <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="txoo">
+                    <img src="New York Cheesecake.jpg" alt="">
+                    <h1>New York Cheesecake</h1>
+                    <p>"The Classic New York Cheese cake with a rich, creamy satiny...</p>
+                </div>
+                <div class="item-value">
+                    <span class="item-price">₹404.25</span>
+                    <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="txoo">
+                    <img src="Butter Croissant.jpg" alt="">
+                    <h3>Butter Croissant</h3>
+                    <p>"A flaky and buttery French style pastry served with butter...</p>
+                </div>
+                <div class="item-value">
+                    <span class="item-price">₹288.75</span>
+                    <span class="add-item"><button class="button" onclick="togglePopup()">Add item</button></span>
+                </div>
+            </div>
+        </div>
+    </main>
+</section>
+
+    <footer class="footer" id="footer">
+        <div class="container0">
+            <div class="row">
+                <div class="footer-col">
+                    <img src="sb2.png" alt="">
+                </div>
+                <div class="footer-col">
+                    <h4>about us</h4>
+                    <ul>
+                        <li><a href="#">our heritage</a></li>
+                        <li><a href="#">our company</a></li>
+                        <li><a href="#">coffeehouse</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Responsibility</h4>
+                    <ul>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Ethical Sourcing</a></li>
+                        <li><a href="#">Environment</a></li>
+                        <li><a href="#">Diversity</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>social media</h4>
+                    <div class="social-links">
+                        <p><a href="https://www.instagram.com/starbucksindia/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></i></a>
+                        <a href="https://www.facebook.com/starbucksindia" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></i></a>
+                        <a href="https://twitter.com/starbucksindia" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
